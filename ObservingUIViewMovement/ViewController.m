@@ -13,15 +13,27 @@
 @end
 
 @implementation ViewController
+@synthesize myView;
+@synthesize insideView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Here you observe the custom variable on insideView
+    [self.insideView addObserver:self forKeyPath:@"positionInWindow" options: NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    NSLog(@"Inside view position changed!");
 }
 
 - (void)viewDidUnload
 {
+    [self setMyView:nil];
+    [self setInsideView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

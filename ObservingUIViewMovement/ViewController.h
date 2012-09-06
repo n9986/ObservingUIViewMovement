@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MyView.h"
+#import "InsideView.h"
+
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet MyView *myView;
+@property (weak, nonatomic) IBOutlet InsideView *insideView;
 
 @end
