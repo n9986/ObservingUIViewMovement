@@ -37,6 +37,7 @@
 		331EB1A115F8AEEA00DD29E1 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		331EB1A315F8AEFB00DD29E1 /* InsideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsideView.h; sourceTree = "<group>"; };
 		331EB1A415F8AEFB00DD29E1 /* InsideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsideView.m; sourceTree = "<group>"; };
+		331EB1A615F8B7FE00DD29E1 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		331EB17115F8AE9B00DD29E1 = {
 			isa = PBXGroup;
 			children = (
+				331EB1A615F8B7FE00DD29E1 /* README */,
 				331EB18615F8AE9B00DD29E1 /* ObservingUIViewMovement */,
 				331EB17F15F8AE9B00DD29E1 /* Frameworks */,
 				331EB17D15F8AE9B00DD29E1 /* Products */,

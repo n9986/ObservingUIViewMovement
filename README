@@ -1,0 +1,6 @@
+ObservingUIViewMovement
+-----------------------
+
+Quick clean fix for monitoring UIViews for movement when they are nested inside another UIView.
+
+The Code should be self explanatory.
