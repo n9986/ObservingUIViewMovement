@@ -22,7 +22,10 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // Here you observe the custom variable on insideView
-    [self.insideView addObserver:self forKeyPath:@"positionInWindow" options: NSKeyValueObservingOptionNew context:nil];
+    [self.insideView addObserver:self 
+                      forKeyPath:@"positionInWindow" 
+                         options:NSKeyValueObservingOptionNew 
+                         context:nil];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context

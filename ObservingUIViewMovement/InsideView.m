@@ -44,12 +44,16 @@
               context:nil];
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+- (void)observeValueForKeyPath:(NSString *)keyPath 
+                      ofObject:(id)object 
+                        change:(NSDictionary *)change 
+                       context:(void *)context
 {
     // Here we update the positionInWindow because 
     // we know the superview.frame has changed
     CGPoint frameOrigin = self.frame.origin;
-    [self setPositionInWindow:[[self window] convertPoint:frameOrigin fromView:self]];
+    [self setPositionInWindow:[[self window] convertPoint:frameOrigin
+                                                 fromView:self]];
 }
 
 /*
